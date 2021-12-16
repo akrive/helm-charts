@@ -3,3 +3,4 @@ global:
   test: test_val
   test1: test1_val
   test2: val2
+  test3: val3
