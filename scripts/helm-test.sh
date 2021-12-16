@@ -14,8 +14,7 @@ helm template pages
 
 echo "------------------------Start time is--------  $(date +%Y-%m-%dT%H%M%S%z)"
 
-helm uninstall "$RELEASE_NAME" pages
-helm install "$RELEASE_NAME" pages
+helm upgrade --install "$RELEASE_NAME" pages --debug
 
 echo "------------------------End time is--------  $(date +%Y-%m-%dT%H%M%S%z)"
 
