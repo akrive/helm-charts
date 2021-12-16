@@ -14,5 +14,5 @@ spec:
       imagePullPolicy: {{ .Values.imagePullPolicy }}
       command: ["/bin/sh","-c"]
       args:
-        - curl  http://{{ .Release.Name }}-{{ .Chart.Name }}.{{ .Release.Namespace }}.svc.cluster.local:8080
+        - curl  http:/{{ .Release.Name }}-{{ .Chart.Name }}.{{ .Release.Namespace }}.svc.cluster.local:8080
   restartPolicy: Never
