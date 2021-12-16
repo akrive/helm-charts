@@ -2,3 +2,4 @@ global:
   mysql_svc_name: pages-mysql
   test: test_val
   test1: test1_val
+  test2: val2
